@@ -476,3 +476,12 @@ footer img {
     outline: 0;
     box-shadow: 0 0 0 0 !important;
 }
+
+header nav .navbar-brand2 {
+    padding-right: 10px;
+}
+
+header nav .navbar-brand2 img {
+    width: auto;
+    padding: 2px 0px;
+}
