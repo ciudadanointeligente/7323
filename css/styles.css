@@ -142,16 +142,16 @@ header nav .navbar-nav a:hover {
     justify-content: center;
 }
 
-.ancla{
+.ancla {
     height: 30px;
 }
 
 
 /*Videos*/
 
-.persona{
-    padding: 0px!important;
-    margin: 0px!important;
+.persona {
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 .persona-btn {
@@ -163,7 +163,7 @@ header nav .navbar-nav a:hover {
     width: 100%;
 }
 
-.persona-btn img{
+.persona-btn img {
     width: 100%;
 }
 
@@ -189,22 +189,22 @@ header nav .navbar-nav a:hover {
 
 /*Modal*/
 
-.modal .modal-dialog{
-    max-width: 600px;
+.modal .modal-dialog {
+    max-width: 800px;
 }
 
-.modal .modal-content{
+.modal .modal-content {
     background: #F5EFE1;
     border-radius: 0px;
 }
 
-.modal .modal-header{
+.modal .modal-header {
     border: 0px;
     padding: 0px;
     height: 45px;
 }
 
-.modal-header .btn-close{
+.modal-header .btn-close {
     background: black;
     color: white;
     opacity: 1;
@@ -213,7 +213,7 @@ header nav .navbar-nav a:hover {
     position: absolute;
     right: 0px;
     top: 0px;
-    margin: 0px!important;
+    margin: 0px !important;
     height: 45px;
     width: 45px;
     display: flex;
@@ -221,22 +221,20 @@ header nav .navbar-nav a:hover {
     align-content: center;
 }
 
-.btn-close p{
+.btn-close p {
     position: absolute;
-    margin-bottom: 0px!important;
+    margin-bottom: 0px !important;
     font-size: 2em;
     color: white;
 }
 
-.modal-body{
+.modal-body {
     padding: 0px 45px 45px 45px;
 }
 
 
 
 /*Seccion texto*/
-.seccion-texto {}
-
 .seccion-texto p {
     font-size: 2em;
     text-align: center;
@@ -247,6 +245,17 @@ header nav .navbar-nav a:hover {
 
 
 /*Creditos*/
+
+.linea {
+    display: block;
+}
+
+
+.linea-movil {
+    display: none;
+    width: 100%;
+}
+
 
 .creditos .linea {
     width: 100%;
@@ -269,20 +278,96 @@ header nav .navbar-nav a:hover {
 }
 
 /*Sobre el proyecto*/
-.sobre-el-proyecto{
+.sobre-el-proyecto {
     background: url(../img/bg-seccion.png);
     background-size: cover;
     width: 94%;
     margin-left: 6%;
 }
 
-.sobre-el-proyecto .creditos p{
+.sobre-el-proyecto .container {
+    width: 90%;
+    margin-left: 0px;
+    padding: 100px 0px 0px 40px;
+}
+
+.sobre-el-proyecto .container .breadcrumbs ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.sobre-el-proyecto .container .breadcrumbs ul li {
+    padding-right: 10px;
+}
+
+.sobre-el-proyecto .container .breadcrumbs ul li a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.sobre-el-proyecto .container .breadcrumbs ul li a:hover {
+    text-decoration: underline;
+}
+
+.sobre-el-proyecto .container .breadcrumbs ul li p {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.sobre-el-proyecto .container .contenido h2 {
+    color: white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.sobre-el-proyecto .container .contenido p {
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.sobre-el-proyecto .logo-creditos {
+    padding-left: 40px;
+}
+
+
+
+.sobre-el-proyecto .logo-creditos {
+    position: relative;
+    bottom: 60px;
+    padding-left: 30px;
+}
+
+.sobre-el-proyecto .logo-creditos p {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
     color: white;
 }
 
-.sobre-el-proyecto .linea{
+.sobre-el-proyecto .logo-creditos .logo-fci {
+    width: 150px;
+}
+
+.sobre-el-proyecto .linea {
     width: 100%;
 }
+
+
 
 footer {
     background: black;
@@ -308,4 +393,86 @@ footer ul li {
 
 footer img {
     width: 25px;
+}
+
+
+
+@media(max-width:768px) {
+
+    .container-fluid {
+        max-width: 90%;
+    }
+
+    .float {
+        position: fixed;
+        width: 10%;
+    }
+
+    .float img {
+        padding: 5px;
+    }
+
+    .sobre-el-proyecto {
+        width: 90%;
+        margin-left: 10%;
+    }
+
+
+    header nav .navbar-nav a {
+        border-top: 2px solid black;
+        border-left: 0px;
+    }
+
+    .navbar-toggler-icon {
+        margin-right: 20px;
+    }
+
+    .que-es {
+        width: 100%;
+    }
+
+    .que-es p {
+        font-size: 1.6em;
+        text-align: left;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .enlace {
+        padding-left: 40px;
+    }
+
+    .enlace img {
+        width: 35px;
+    }
+
+    .seccion-texto p {
+        font-size: 1.6em;
+        text-align: left;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .creditos .logo-creditos {
+        bottom: 20px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .linea {
+        display: none;
+    }
+
+    .linea-movil {
+        display: block;
+    }
+
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
 }
