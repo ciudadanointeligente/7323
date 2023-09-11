@@ -457,6 +457,11 @@ footer img {
         bottom: 20px;
     }
 
+    header nav .navbar-brand2 {
+        display:none;
+    }
+
+
 }
 
 @media(max-width:500px) {
